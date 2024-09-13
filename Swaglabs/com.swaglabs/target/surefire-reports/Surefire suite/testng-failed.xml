@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.swaglabs.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="testInvalidLogin"/>
+          <include name="tearDownClass"/>
+          <include name="testValidLogin"/>
+          <include name="testEmptyFieldsLogin"/>
+        </methods>
+      </class> <!-- com.swaglabs.LoginTests -->
+      <class name="com.swaglabs.NavigationTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="testNavigationBetweenPages"/>
+          <include name="testLogoutFunctionality"/>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.swaglabs.NavigationTests -->
+      <class name="com.swaglabs.CartPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCheckoutProcess"/>
+          <include name="testRemoveItemFromCart"/>
+          <include name="tearDown"/>
+          <include name="testViewCart"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.swaglabs.CartPageTests -->
+      <class name="com.swaglabs.ProductPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="testAddToCart"/>
+          <include name="tearDown"/>
+          <include name="testProductVisibility"/>
+          <include name="setUpClass"/>
+          <include name="testProductDetails"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.swaglabs.ProductPageTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
